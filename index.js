@@ -311,5 +311,9 @@ app.post('/login', checkSchema(loginSchema), async (req,res) => {
   
   });
 
+  app.test('/test', async (req,res) => {
+    res.json("działa test");
+    });
+
   
   app.listen(PORT);
