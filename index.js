@@ -24,6 +24,7 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 mongoose.connect(process.env.MONGO_CONNECT);
+const PORT = process.env.PORT || 4000;
 
 const registrationSchema = {
   username: {
@@ -311,4 +312,4 @@ app.post('/login', checkSchema(loginSchema), async (req,res) => {
   });
 
   
-  app.listen(process.env.PORT);
+  app.listen(PORT);
