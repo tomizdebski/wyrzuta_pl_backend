@@ -5,7 +5,7 @@
   "scripts":{
     "dev": "nodemon index.js",
     "build": "yarn",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "author": "izdebski.dev",
   "license": "no",
